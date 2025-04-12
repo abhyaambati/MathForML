@@ -1,1 +1,46 @@
+Vectors
+.......
+Vector - list of numbers that represents things like:
+- features (height, weight, age)
+- model weights
+- embeddings (in NLP)
+- direction and magnitude in space
+
+eg: x = [ 2, 4, 6 ] (3-dimensional vectors)
+    y = [ 1, 3, 5 ]
+
+Vector Operations
+--
+1. Addition
+# element-wise addition
+z = [x[i] + y[i} for i in range(len(x))]
+# z = [ 3, 7, 11 ]
+
+2. Scalar multiplication
+a = 2
+scaled = a * xi for xi in x
+# scaled = [ 4, 8, 12 ]
+
+3. Dot Product
+Formula - x.y = x1.y1 + x2.y2 + x3.y3
+
+dot_product = sum([x[i] * y[i] for i in range(len(x))])
+# dot_product = 44
+# In ML, dot products are used in : calculating similarity between vector (cosine similarity), neural network layer computations, projection of data points.
+
+Python Version (with NumPy)
+---------------------------
+import numpy as np
+
+x = np.array([ 2, 4, 6 ])
+y = np.array([ 1, 3, 5 ])
+
+# Dot Product
+dot = np.dot(x,y) # output 44
+
+# element-wise addition
+z = x + y # Output: array ([ 3, 7, 11 ])
+
+# scalar multiplication
+scaled = 2 * x # Output: array ([ 4, 8, 12 ])
 
