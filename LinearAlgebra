@@ -44,3 +44,6 @@ z = x + y # Output: array ([ 3, 7, 11 ])
 # scalar multiplication
 scaled = 2 * x # Output: array ([ 4, 8, 12 ])
 
+Vector NORM ('length' of a vector)
+----------------------------------
+The norm of a vector is it's magnitude. li
